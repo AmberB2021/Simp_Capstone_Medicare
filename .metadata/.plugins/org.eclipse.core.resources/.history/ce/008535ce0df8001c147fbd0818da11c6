@@ -1,0 +1,40 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class CartPage extends BasePage {
+
+	
+	public CartPage(WebDriver driver) {
+		super(driver);
+
+	}
+	By continueShoppingButton = By.xpath("//table[@id='cart']//a[contains(text(),'Continue')]");
+	By checkoutButton = By.xpath("//table[@id='cart']//a[contains(text(),'Checkout')]");
+
+	
+	public LandingPage clickContinueShopping() {
+		MyLog.info("Go back shopping..");
+		click(continueShoppingButton);
+		return new LandingPage(driver);
+	}
+	
+	public Shipping clickCheckout() {
+		MyLog.info("Checking out..");
+		click(checkoutButton);
+		return new Shipping(driver);
+	}
+	
+	public CartPage goToCartPage() {
+		MyLog.info("Access to Cart Page from drop down menu..");
+		return new CartPage(driver);
+	}
+	
+	@Override
+	public CartPage sleep(int miliseconds) {
+		super.threadSleep(miliseconds);
+		return this;
+	}
+
+}

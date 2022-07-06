@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="JavaSE-1.8" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
+	<item value="/home/arbrownappliedi/Downloads" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/home/arbrownappliedi/eclipse-workspace3/MedicareProject/src/main/java" key="org.eclipse.jdt.ui.last.external.project"/>
+	<section name="RefactoringWizard.preview">
+		<item value="600" key="width"/>
+		<item value="400" key="height"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.wizards.buildpaths.NewVariableEntryDialog">
+		<item value="651" key="DIALOG_WIDTH"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="379" key="DIALOG_HEIGHT"/>
+		<item value="-3" key="DIALOG_X_ORIGIN"/>
+		<item value="70" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item value="5" key="index"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="2" key="pageIndex"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="JavaElementSearchActions">
+	</section>
+</section>

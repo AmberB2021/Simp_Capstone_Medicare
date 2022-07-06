@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="utility.GenerateReport"/>
+<fullyQualifiedTypeName name="org.apache.log.Logger"/>
+<fullyQualifiedTypeName name="org.testng.log4testng.Logger"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.Logger"/>
+<fullyQualifiedTypeName name="org.apache.log4j.LogManager"/>
+<fullyQualifiedTypeName name="pageObjects.LandingPage"/>
+<fullyQualifiedTypeName name="pageObjects.HomePage"/>
+<fullyQualifiedTypeName name="java.net.MalformedURLException"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReporter"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
+</qualifiedTypeNameHistroy>
