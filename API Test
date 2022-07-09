@@ -1,1 +1,14 @@
-
+{
+	"id": "33445187-dafd-4d5e-85f8-c3bb657aef4f",
+	"name": "Env_Medicare",
+	"values": [
+		{
+			"key": "SampleCat1Product",
+			"value": "{\n        \"id\": 2,\n        \"code\": \"PRDDEF123GHIX\",\n        \"name\": \"Combiflame\",\n        \"brand\": \"Cipla\",\n        \"description\": \"An antipyretic medicine used for fever.\",\n        \"unitPrice\": 22.0,\n        \"quantity\": 50,\n        \"active\": true,\n        \"purchases\": 0,\n        \"views\": 0,\n        \"file\": null\n    }",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2022-07-09T15:14:40.311Z",
+	"_postman_exported_using": "Postman/8.12.2"
+}
