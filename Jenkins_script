@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+     stages {
+        
+        stage('BUILD: source-from-git') {
+            steps{
+                // Get codes from a GitHub repository
+               https://github.com/AmberB2021/Simp_Capstone_Medicare.git'
+            }
+        }
+
+        stage('TEST: mvn-test') {
+            steps{
+                // run MVN test
+                sh 'mvn test'
+            }
+        }
+
+        stage('Publish Report: extent-report') {
+            steps{
+                publishHTML (target : [allowMissing: false,
+                     alwaysLinkToLastBuild: true,
+                     keepAll: true,
+                     reportDir: 'test-output/extent-reports',
+                     reportFiles: 'extent-report.html',
+                     reportName: 'Medicare - Extent Report',
+                     reportTitles: 'Medicare - Extent Report'])            
+            }
+        }
+
+        stage('TEST: newman') {
+            steps{
+                // run newman
+                sh 'sudo /bin/newman run -n 2 -e API_testing/Env_Medicare.postman_environment.json API_testing/Medicare.postman_collection.json --reporters=htmlextra --reporter-htmlextra-export "./test-output/newman-reports/medicare_newman.html"'
+            }
+        }
+
+        stage('Publish Report: newman-report') {
+            steps{
+                publishHTML (target : [allowMissing: false,
+                     alwaysLinkToLastBuild: true,
+                     keepAll: true,
+                     reportDir: 'test-output/newman-reports',
+                     reportFiles: 'medicare_newman.html',
+                     reportName: 'Medicare - API Test Report',
+                     reportTitles: 'Medicare - API Test Newman Report'])            
+            }
+        }
+
+    }
+}
